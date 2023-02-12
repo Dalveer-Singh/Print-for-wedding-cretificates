@@ -1,7 +1,10 @@
 # Wedding-Certificate-Printing-GUI-Application
 Use friendly GUI desigend for very specific certificate printitng requirement, where pre-printed (blank) certificates were available, and software to fill out the gaps was required. 
 
-It uses tkinter to input information for making the printable file for certifiate. It uses csv file to store the data of the cerificates made. It also shows the history of the forms made in the past along with its data. 
+     Useful for small institutions looking for easy way to create fillable certificates.
+        It uses tkinter GUI to gather information. 
+        It uses csv file to store the data. 
+        It uses reportlab to create output PDF
 
 ### Requirements:
 - Python 2.7 - [download here](https://www.python.org/downloads/release/python-2718/)
