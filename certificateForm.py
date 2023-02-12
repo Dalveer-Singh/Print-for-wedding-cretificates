@@ -100,9 +100,13 @@ def drawCertificateForm():
         command=lambda: CONST.openSaveFolder(collectedFormadata['marriageDate']), borderwidth=0,highlightthickness = 0)
     buttons["btn_open_folder"]=btn_open_folder;
 
-    btn_open_pdf = tk.Button(window, text="Open Printable File", font=(CONST.LABEL_FONT, CONST.LABEL_SIZE), relief="raised",     bg=CONST.TITLE_BG_COLOR, fg=CONST.TITLE_FG_COLOR, 
+    btn_open_print_pdf = tk.Button(window, text="Print", font=(CONST.LABEL_FONT, CONST.LABEL_SIZE), relief="raised",     bg=CONST.TITLE_BG_COLOR, fg=CONST.TITLE_FG_COLOR, 
         command=lambda: CONST.openPdfFile(collectedFormadata['marriageDate'], "print_"+CONST.genrateFileName(collectedFormadata) ), borderwidth=0,highlightthickness = 0)
-    buttons["btn_open_pdf"]=btn_open_pdf;
+    buttons["btn_open_print_pdf"]=btn_open_print_pdf;
+
+    btn_new_form = tk.Button(window, text="New", font=(CONST.LABEL_FONT, CONST.LABEL_SIZE), relief="raised",     bg=CONST.TITLE_BG_COLOR, fg=CONST.TITLE_FG_COLOR, 
+        command=lambda: CONST.openCertificateForm(window), borderwidth=0,highlightthickness = 0)
+    buttons["btn_new_form"]=btn_new_form;
 
     window.mainloop()
 
@@ -113,9 +117,10 @@ def show_button(widget):
     widget.grid() # pack
 
 def showResultButtons():
-    buttons["btn_open_pdf"].grid(row=11, column=1, padx=(210, 0), pady=10)
+    buttons["btn_open_print_pdf"].grid(row=11, column=1, padx=(210, 0), pady=10)
     buttons["btn_open_folder"].grid(row=11, column=1, padx=(0, 210), pady=10, )
-    buttons["btn_preview"].grid(row=11, column=0,  padx=(150, 0))
+    buttons["btn_preview"].grid(row=12, column=1,  padx=(180, 0), pady=10)
+    buttons["btn_new_form"].grid(row=13, column=1,  padx=(210, 0), pady=10)
     
 def promptErro(errorMsg):
     return "Error: " + errorMsg + "\n"
