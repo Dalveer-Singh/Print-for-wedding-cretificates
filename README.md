@@ -48,3 +48,9 @@ After checking out the code, use .bat file or dashboard.py to inititate the appl
         - link git to code
         - make exe/ lib 
     Report a Bug
+    
+## Wedding certificate printing
+* @ 2023
+* @ Author - Dalveer Singh
+* sunnny433@gmail.com | [git](https://github.com/Dalveer-Singh) | [linkedin](https://www.linkedin.com/in/-dalveersingh/)
+* Dont forget to mention us 🙂👍
