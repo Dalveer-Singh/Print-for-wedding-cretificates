@@ -24,6 +24,7 @@ After checking out the code, use .bat file or dashboard.py to inititate the appl
         - gather marriage info ✅
         - real-time Entry length limit (ex.address 75chars)
         - more info to gather? phone Numbers
+        - Edit btn in form, with pre-information
     preview() - with bg image ✅
     print() - to PDF ✅
     logging enabled ✅
