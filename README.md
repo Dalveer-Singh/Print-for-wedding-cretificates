@@ -47,9 +47,9 @@ After checking out the code, use .bat file or dashboard.py to inititate the appl
         - user update
         - print update.
     Publish to GIT 
-        - publish
+        - publish ✅
         - link git to code
-        - make exe/ lib 
+        - make exe/ or downloadable lib 
     Report a Bug
     
 ## Wedding certificate printing
